@@ -1,0 +1,9 @@
+m=list(map(str,input().split()))
+n=[m[0]]
+for i in n:
+	for j in m:
+		if i[-1]==j[0]:
+			if j not in n:
+				n.append(j)
+				break
+print(n)
